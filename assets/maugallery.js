@@ -1,3 +1,8 @@
+let images = document.querySelectorAll("img");
+images.forEach(element => {
+  element.setAttribute("loading", "lazy");
+});
+
 (function($) {
   $.fn.mauGallery = function(options) {
     var options = $.extend($.fn.mauGallery.defaults, options);
